@@ -1,0 +1,13 @@
+.page {
+  margin: 0 auto;
+  max-width: 769px;
+  min-height: 100vh;
+  padding: var(--distance);
+  background-color: white;
+}
+
+hr {
+  margin: var(--distance);
+  opacity: .2;
+  color: var(--mainColor);
+}

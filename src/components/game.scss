@@ -1,0 +1,22 @@
+.game {
+  font-size: .95rem;
+
+  &__linkBox {
+    display: flex;
+    text-decoration: none;
+  }
+
+  &__title, &__description {
+    flex: 1;
+    margin: 1em var(--distance);
+  }
+
+  &__title {
+    color: var(--mainTextColor);
+  }
+
+  &__description {
+    color: var(--secondaryTextColor);
+  }
+  
+}

@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+}
+
+:root {
+  --distance: 20px;
+  --mainColor: blueviolet;
+  --mainTextColor: rgb(51, 51, 51);
+  --secondaryTextColor: #8e8e8e;
+}
+
+a {
+  transition: background-color .4s;
+}
+
+a:outline, a:focus {
+  outline: 1px solid var(--mainColor);
+}
+
+a:focus, a:hover {
+  text-decoration: none;
+  background-color: rgba(138, 39, 223,.1)
+}
+
+hr {
+  margin: var(--distance);
+  opacity: .2;
+  color: var(--mainColor);
+}
+
+ul {
+  list-style: none;
+}
+
