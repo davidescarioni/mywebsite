@@ -27,10 +27,10 @@ const StuffList = () => {
         }
       }
     `)
-    console.log(data);
+
     return (
       <div className="gamelist">
-        <h2 className="gamelist__title">Stuff that I develop</h2>
+        <h2 className="gamelist__title">Stuff I develop</h2>
         <ul>
           {data.allMdx.nodes.map(({ excerpt, frontmatter }) => (
             <li>

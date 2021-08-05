@@ -27,10 +27,10 @@ const GameList = () => {
         }
       }
     `)
-    console.log(data);
+
     return (
       <div className="gamelist">
-        <h2 className="gamelist__title">Games that I made</h2>
+        <h2 className="gamelist__title">Games I made</h2>
         <ul>
           {data.allMdx.nodes.map(({ excerpt, frontmatter }) => (
             <li>

@@ -27,7 +27,7 @@ const BlogList = () => {
         }
       }
     `)
-    console.log(data);
+
     return (
       <div className="gamelist">
         <h2 className="gamelist__title">Blog</h2>

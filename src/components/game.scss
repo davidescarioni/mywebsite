@@ -2,17 +2,24 @@
   font-size: .95rem;
 
   &__linkBox {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     text-decoration: none;
+
+    &:hover .game__title {
+      padding-left: 10%;
+    }
   }
 
   &__title, &__description {
-    flex: 1;
+    display: flex;
+    align-items: center;
     margin: 1em var(--distance);
   }
 
   &__title {
     color: var(--mainTextColor);
+    transition: padding .5s;
   }
 
   &__description {
@@ -24,8 +31,12 @@
       margin-bottom: .5em;
     }
     &__linkBox {
-      flex-direction: column;
+      grid-template-columns: 1fr;
       margin-bottom: 1rem;
+
+      &:hover .game__title {
+        padding-left: 0;
+      }
     }
 
     &__description {

@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+  box-sizing: border-box;
+}
+
+:root {
+  --distance: 20px;
+  --mainColor: rgb(138,39,223);
+  --mainColorBorder: rgba(138,39,223,.2);
+  --mainColorHover: rgba(138,39,223,.1);
+  --mainTextColor: rgb(51, 51, 51);
+  --secondaryTextColor: #8e8e8e;
+}
+
+a {
+  transition: background-color .4s;
+
+  &:outline, &:focus {
+    outline: 1px solid var(--mainColor);
+  }
+
+  &:focus, &:hover {
+    text-decoration: none;
+    background-color: var(--mainColorHover)
+  }
+}
+
+hr {
+  margin: var(--distance);
+  color: var(--mainColorBorder);
+}
+
+ul {
+  list-style: none;
+}
+
+/* body {
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='21.5' height='21.5' patternTransform='scale(1) rotate(45)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0,0%,100%,1)'/><path d='M3.25 10h13.5M10 3.25v13.5' transform='translate(0.75,0)' stroke-linejoin='round' stroke-linecap='round' stroke-width='0.5' stroke='hsla(258.5,59.4%,59.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>")
+} */
+
