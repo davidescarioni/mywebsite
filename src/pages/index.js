@@ -5,12 +5,14 @@ import GameList from "../components/gamelist"
 import StuffList from "../components/stufflist"
 import BlogList from "../components/bloglist"
 import Intro from "../components/intro"
-import "../components/index.css"
+import SEO from "../components/seo"
+import "../components/index.scss"
 import "@fontsource/open-sans" // Defaults to weight 400.
 
 const HomePage = ({ data }) => { 
     return (
         <>
+            <SEO></SEO>
             <Layout>
                 <Intro />
                 <hr></hr>

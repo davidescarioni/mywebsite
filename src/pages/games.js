@@ -3,10 +3,12 @@ import { graphql } from 'gatsby'
 import Layout from "../components/layout"
 import GameList from "../components/gamelist"
 import Header from "../components/header"
+import SEO from "../components/seo"
 
 const GamePage = ({ data }) => {
     return (
         <>
+            <SEO></SEO>
             <Header />
             <Layout>
                 <GameList></GameList>

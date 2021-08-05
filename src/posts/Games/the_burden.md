@@ -5,5 +5,5 @@ published: true
 tags: games
 image: the_burden.png
 description: A tough platform where you control a turtle with an heavy shell.
-url: https://scario88.itch.io/de-spelunca-ex-elementis
+url: https://www.indiexpo.net/it/games/the-burden
 ---
