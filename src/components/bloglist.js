@@ -15,7 +15,7 @@ const BlogList = () => {
             excerpt(pruneLength: 250)
             frontmatter {
               title
-              date
+              date(formatString: "DD MMMM YYYY")
               image
               description
               url
@@ -39,7 +39,7 @@ const BlogList = () => {
                   <p className="game__title">{frontmatter.title}</p>
                   <div className="game__description">
                     <p>{frontmatter.description}</p>
-                    <p>{excerpt}</p>
+                    <p>{frontmatter.date}</p>
                   </div>
                 </Link>
               </Game>

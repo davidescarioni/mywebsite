@@ -18,5 +18,19 @@
   &__description {
     color: var(--secondaryTextColor);
   }
+
+  @media (max-width: 768px) {
+    &__title {
+      margin-bottom: .5em;
+    }
+    &__linkBox {
+      flex-direction: column;
+      margin-bottom: 1rem;
+    }
+
+    &__description {
+      margin-top: 0;
+    }
+  }
   
 }

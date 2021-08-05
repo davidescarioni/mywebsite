@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  &__item {
+    height: 100%;
+
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.2rem;
+      font-family: "Open Sans";
+      color: var(--mainTextColor);
+      padding: 0 var(--distance);
+      text-decoration: none;
+      height: 64px;
+      border-bottom: 5px solid transparent;
+      box-sizing: border-box;
+
+      &.active {
+        border-bottom: 5px solid var(--mainColor);
+      }
+    }
+
+  }
+
+  @media (max-width: 768px) {
+    &__item a {
+      font-size: .85rem;
+      padding: 0 calc(var(--distance) / 2);
+    }
+  }
+
+}
+
+

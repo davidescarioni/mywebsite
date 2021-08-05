@@ -3,6 +3,7 @@ import { MDXRenderer } from 'gatsby-plugin-mdx'
 import React from 'react'
 import Layout from './layout'
 import Header from './header'
+import "./post.scss"
 
 
 export default function postPage({ data }) {
@@ -11,10 +12,12 @@ export default function postPage({ data }) {
         <>
             <Header />
             <Layout>
-                <h1>{frontmatter.title}</h1>
-                <p>{frontmatter.date}</p>
+                <h1 className="post__title">{frontmatter.title}</h1>
+                <p className="post__date">{frontmatter.date}</p>
                 <hr></hr>
-                <MDXRenderer>{body}</MDXRenderer>
+                <div className="post__text">  
+                    <MDXRenderer className="post__text">{body}</MDXRenderer>
+                </div>
             </Layout>
         </>
     )
@@ -29,7 +32,7 @@ export const query = graphql
           body
           frontmatter {
               title
-              date(formatString: "DD MM YYYY")
+              date(formatString: "DD MMMM YYYY")
           }
       }
   }

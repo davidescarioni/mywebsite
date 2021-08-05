@@ -1,5 +1,5 @@
 import React from "react"
-import "./sitenavigation.css"
+import "./sitenavigation.scss"
 import { Link } from 'gatsby'
 
 export default function SiteNavigation() {

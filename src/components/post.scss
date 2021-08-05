@@ -1,0 +1,39 @@
+.post {
+  &__title, &__date, &__text {
+    margin: 0 var(--distance);
+    color: var(--mainTextColor);
+  }
+
+  &__title {
+    color: var(--mainColor);
+  }
+
+  &__title, &__date {
+    text-align: center;
+  }
+
+  &__text {
+    line-height: 1.8rem;
+
+    h2, h3, h4 {
+      margin: 1rem 0;
+      color: var(--mainColor)
+    }
+
+    h2:before {
+      content: "# ";
+    }
+
+    a {
+      text-decoration: none;
+      padding: 0 .2rem;
+      border: 2px solid var(--mainColorBorder);
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__text {
+      font-size: .8rem;
+    }
+  }
+}

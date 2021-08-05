@@ -4,6 +4,13 @@
   min-height: 100vh;
   padding: var(--distance);
   background-color: white;
+
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: calc(var(--distance) / 2);
+  }
 }
 
 hr {

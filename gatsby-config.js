@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: `Davide Scarioni's Portfolio`,
+    title: `Davide Scarioni's Corner`,
     description: `Just a simple aggregator for stuff that I made`,
   },
   plugins: [
@@ -24,7 +24,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
           name: `posts`,
-          path: `${__dirname}/src/posts`,
+          path: `${__dirname}/src/posts/`,
       },
     }
   ],
