@@ -1,5 +1,5 @@
 import React from "react"
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql, useStaticQuery, Link } from 'gatsby'
 import Game from "./game.js"
 import "./gamelist.scss"
 
@@ -32,16 +32,16 @@ const GameList = () => {
       <div className="gamelist">
         <h2 className="gamelist__title">Games I made</h2>
         <ul>
-          {data.allMdx.nodes.map(({ excerpt, frontmatter }) => (
+          {data.allMdx.nodes.map(({ excerpt, frontmatter, fields }) => (
             <li>
               <Game key={frontmatter.date}>
-                <a className="game__linkBox" href={frontmatter.url} title={`${frontmatter.title} Download`}>
+                <Link to={fields.slug} className="game__linkBox" title={frontmatter.title}>
                     <p className="game__title">{frontmatter.title}</p>
                     <div className="game__description">
                       <p>{frontmatter.description}</p>
                       <p>{excerpt}</p>
                     </div>
-                </a>
+                </Link>
               </Game>
             </li>
           ))}
